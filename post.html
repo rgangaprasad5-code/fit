@@ -89,16 +89,32 @@
       color: white;
     }
 
-    .footer {
-      background-color: grey;
-      padding: 20px;
-      text-align: center;
-    }
+.footer {
+  padding: 20px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
 
-    .footer a {
-      color: black;
-      text-decoration: none;
-    }
+.footer.light {
+  background-color: blue; /* Light blue */
+  color:white;
+}
+
+.footer a {
+  color: rgb(236, 236, 242);
+  text-decoration: none;
+}
+
+.footer button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color:blue;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
 
     .img2 img {
       width: 100%;
@@ -231,12 +247,16 @@
 </div>
 
   <!-- Footer -->
-  <div class="footer">
+  <div class="footer" id="footer">
     <div class="contact">
-      <p>Contact us</p>
-      <a href="#">fitnesstracking@gamil.com</a>
+      <p>Contact Us</p>
+      <p>Email: <a href="mailto:fitnesstracking@gmail.com">fitnesstracking@gmail.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+91 234567890</a></p>
+      <p><a href="#help">Help</a></p>
+  
     </div>
   </div>
+
 
   <!-- Scripts -->
   <script src="script.js"></script>
